@@ -119,7 +119,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
-            SizedBox(height: 20,),
+            const SizedBox(
+              height: 20,
+            ),
             Expanded(
                 child: ListView.builder(
               padding: const EdgeInsets.only(top: 30),
@@ -152,7 +154,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 title: result[0],
                                 content: result[1],
                                 modifiedTime: DateTime.now());
-                                
+
                             filteredNotes[index] = Note(
                                 id: filteredNotes[index].id,
                                 title: result[0],
